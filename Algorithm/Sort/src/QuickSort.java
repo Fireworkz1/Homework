@@ -1,6 +1,7 @@
 public class QuickSort {
     /*
     * 快速排序
+    * T:O(nlogn)
     * */
     public int[] quicksort(int[] list,int l,int r){
         //底层递归返回
