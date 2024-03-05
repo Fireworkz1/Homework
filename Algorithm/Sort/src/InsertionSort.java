@@ -6,16 +6,15 @@ public class InsertionSort {
     public int[] insertionSort(int[] list){
         int p=0;
         int f=0;
-        for(;p<list.length-2;p++){
+        for(;p<list.length-1;p++){
             for(f=p+1;f>0;f--){
-                if(list[f]<list[f-1]){
+                while(list[f]>list[f-1]&&f>1){
+                    f--;
+                }
                     int temp=list[f];
                     list[f]=list[f-1];
                     list[f-1]=temp;
-                    f--;
-                }else {
-                    break;
-                }
+
             }
         }
         return list;
