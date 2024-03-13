@@ -13,7 +13,7 @@ public class Main {
 //        int[] list_original = new int[]{36, 3, 15, 25, 18, 38, 10, 22, 8, 30, 19, 28, 7, 50, 12, 16, 6,
 //                34, 47, 20, 44, 11, 32, 27, 45, 23, 49, 43, 37, 4, 39, 9, 42, 24, 35, 1, 5, 46, 29, 33, 14,
 //                21, 48, 2, 40, 26, 13, 31, 17, 41};
-        int[] list_original = generateRandomArray(3000,10000);
+        int[] list_original = generateRandomArray(10,100);
         int[] list = Arrays.stream(list_original).toArray();
         System.out.println(Arrays.toString(list));
 
@@ -44,6 +44,14 @@ public class Main {
         shellSort.shellSort(list,5);
         tEnd = System.currentTimeMillis();
         System.out.println("希尔排序" + Arrays.toString(list) + "t:" + (tEnd - tStart));
+
+        list = Arrays.stream(list_original).toArray();
+        tStart = System.currentTimeMillis();
+        HeapSort heapSort = new HeapSort();
+        heapSort.heapSort(list);
+        tEnd = System.currentTimeMillis();
+        System.out.println("  堆排序" + Arrays.toString(list) + "t:" + (tEnd - tStart));
+
     }
 
     public static int[] generateRandomArray(int size,int max) {

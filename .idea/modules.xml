@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm/Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Homework.iml" filepath="$PROJECT_DIR$/.idea/Homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaBase/JavaBase.iml" filepath="$PROJECT_DIR$/JavaBase/JavaBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaThread/JavaThread.iml" filepath="$PROJECT_DIR$/JavaThread/JavaThread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithm/LeetCode/LeetCode.iml" filepath="$PROJECT_DIR$/Algorithm/LeetCode/LeetCode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithm/Sort/Sort.iml" filepath="$PROJECT_DIR$/Algorithm/Sort/Sort.iml" />
+    </modules>
+  </component>
+</project>
