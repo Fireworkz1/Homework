@@ -35,24 +35,24 @@ import org.springframework.web.bind.annotation.*;
 * port：application.properties中可查看启动端口，通常为8080
 *基于注解：通过@Apixxx 注解的方式完成对接口和表单/响应的描述。大家可以本地启动程序，访问以上地址查看api文档启动效果
 *
-*
+*@zhangyn
 * */
 @Api(tags = "1:swagger案例")
-@ApiSupport(author = "zhangyn")
+@ApiSupport(author = "这里写controller负责人")
 @Controller
 @RequestMapping("/example")
 public class ExampleController {
 
-    @ApiImplicitParam(name = "name", value = "姓名", required = true)
-    @ApiOperation(value = "Hello world~")
+    @ApiImplicitParam(name = "name", value = "传入参数姓名", required = true)
+    @ApiOperation(value = "接口描述1")
     @PostMapping("/hello")
     @ResponseBody
     public String hello(@RequestParam(name = "name", defaultValue = "unknown user") String name) {
         return "Hello " + name;
     }
 
-    @ApiOperationSupport(author = "zhangsan")
-    @ApiOperation(value = "获取Example对象")
+    @ApiOperationSupport(author = "这里写接口负责人")
+    @ApiOperation(value = "接口描述2")
     @GetMapping("/get")
     @ResponseBody
     public Example getExample(@RequestBody Example example) {

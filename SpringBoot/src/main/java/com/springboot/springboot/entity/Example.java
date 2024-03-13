@@ -29,9 +29,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Builder
 public class Example {
-    @ApiModelProperty(value = "名字")
+    @ApiModelProperty(value = "入参名字")
     private String name;
-    @ApiModelProperty(value = "年龄")
+    @ApiModelProperty(value = "入参年龄")
     private Integer age;
 
 
